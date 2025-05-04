@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinking Fund - Register</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="register-box">
+      <h1>Register Account</h1>
+      <form id="registerForm">
+        <div class="form-group">
+          <label for="fullName">Full Name (as in official list)</label>
+          <input type="text" id="fullName" required>
+        </div>
+        <div class="form-group">
+          <label for="regUsername">Username</label>
+          <input type="text" id="regUsername" required>
+        </div>
+        <div class="form-group">
+          <label for="regPassword">Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="regPassword" required>
+            <span class="toggle-password">👁</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="confirmPassword" required>
+            <span class="toggle-password">👁</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email (optional, for password recovery)</label>
+          <input type="email" id="email">
+        </div>
+        <button type="submit" class="btn">Register</button>
+      </form>
+      <p class="login-link">Already have an account? <a href="index.html">Login</a></p>
+      <div id="registerMessage" class="message"></div>
+    </div>
+  </div>
+  <script src="js/auth.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

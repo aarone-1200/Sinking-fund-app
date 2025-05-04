@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinking Fund - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Sinking Fund Dashboard</h1>
+    <div class="user-info">
+      <span id="usernameDisplay"></span>
+      <button id="logoutBtn" class="btn-sm">Logout</button>
+    </div>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="dashboard.html" class="active">Dashboard</a></li>
+      <li><a href="contributions.html">Contributions</a></li>
+      <li id="adminLink" style="display:none;"><a href="members.html">Member Management</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <div class="stats-container">
+      <div class="stat-card">
+        <h3>Total Members</h3>
+        <p id="totalMembers">0</p>
+      </div>
+      <div class="stat-card">
+        <h3>Current Balance</h3>
+        <p id="currentBalance">₱0.00</p>
+      </div>
+      <div class="stat-card">
+        <h3>This Month's Contributions</h3>
+        <p id="monthlyContributions">₱0.00</p>
+      </div>
+    </div>
+    
+    <div class="chart-container">
+      <canvas id="contributionsChart"></canvas>
+    </div>
+  </main>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/chart.js"></script>
+</body>
+</html>
