@@ -1,4 +1,4 @@
-const API_URL = "YOUR_APPS_SCRIPT_URL"; // Replace with your deployed web app URL
+const API_URL = import.meta.env.VITE_API_URL || "YOUR_APPS_SCRIPT_URL"; // Replace with your deployed web app URL
 
 // Login function
 document.getElementById('loginForm')?.addEventListener('submit', async (e) => {
